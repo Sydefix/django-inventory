@@ -41,7 +41,7 @@ class AddItem(LoginRequiredMixin, CreateView):
 	model = InventoryItem
 	form_class = InventoryItemForm
 	template_name = 'inventory/item_form.html'
-	success_url = reverse_lazy('dashboard')
+	success_url = reverse_lazy('stock')
 
 	def get_context_data(self, **kwargs):
 		context = super().get_context_data(**kwargs)
@@ -56,12 +56,12 @@ class EditItem(LoginRequiredMixin, UpdateView):
 	model = InventoryItem
 	form_class = InventoryItemForm
 	template_name = 'inventory/item_form.html'
-	success_url = reverse_lazy('dashboard')
+	success_url = reverse_lazy('stock')
 
 class DeleteItem(LoginRequiredMixin, DeleteView):
 	model = InventoryItem
 	template_name = 'inventory/delete_item.html'
-	success_url = reverse_lazy('dashboard')
+	success_url = reverse_lazy('stock')
 	context_object_name = 'item'
 
 # Todo: dashboard( some recent, some analytics and some tables) 
