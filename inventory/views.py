@@ -66,4 +66,4 @@ class DeleteItem(LoginRequiredMixin, DeleteView):
 
 # Todo: dashboard( some recent, some analytics and some tables) 
 # credit, factures, invoices(sales, purchases,), analytics, excel order generators
-
+# search functionality
