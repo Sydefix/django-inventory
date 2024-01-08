@@ -68,5 +68,5 @@ class DeleteItem(LoginRequiredMixin, DeleteView):
 # credit, factures, invoices(sales, purchases,), analytics, excel order generators
 # search functionality
 
-# List features:
-
+# stock features:
+# 
